@@ -1,367 +1,543 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
-        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <meta name="description" content="Discover our latest denim collection, including skinny jeans, vintage jeans, and modern styles.">
+    <meta name="author" content="Clothing Store">
+
+    <title>Clothing Store | Denim Collection</title>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
     <link rel="stylesheet" href="style/style.css">
-    <title>Clothing Store Template</title>
 </head>
 
 <body>
 
-    <!--  Header -->
-
+    <!-- Mobile Header -->
     <header class="mobile-header">
-        <a href="#" class="mobile-logo">
+        <a href="#home" class="mobile-logo" aria-label="Clothing Store home">
             LOGO
         </a>
+
+        <div class="mobile-actions">
+            <a href="#products" aria-label="View products">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+
+            <a href="#products" aria-label="Shopping cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
     </header>
 
+    <!-- Sidebar Navigation -->
     <aside class="sidebar">
-        <!-- sidebar Header -->
 
         <header class="sidebar-header">
-            <a href="#" class="logo">
+            <a href="#home" class="logo" aria-label="Clothing Store home">
                 LOGO
             </a>
         </header>
 
-        <nav class="sidebar-navigation">
+        <nav class="sidebar-navigation" aria-label="Main navigation">
+
             <ul class="category-list">
                 <li>
-                    <a href="#">
-                        shirts
-                    </a>
+                    <a href="#products">Shirts</a>
                 </li>
+
                 <li>
-                    <a href="#">
-                        Dresses
-                    </a>
+                    <a href="#products">Dresses</a>
                 </li>
+
                 <li class="category-dropdown">
                     <input type="checkbox" id="jeans-menu">
+
                     <label for="jeans-menu">
                         <span>Jeans</span>
-                        <i class="fa fa-caret-down"></i>
+                        <i class="fa-solid fa-caret-down"></i>
                     </label>
+
                     <ul class="subcategory-list">
                         <li class="active">
-                            <a href="#">
-                                Skinny
-                            </a>
+                            <a href="#products" aria-current="page">Skinny</a>
                         </li>
-                        <li class="">
-                            <a href="#">
-                                Relaxed
-                            </a>
+
+                        <li>
+                            <a href="#products">Relaxed</a>
                         </li>
-                        <li class="">
-                            <a href="#">
-                                Bootcut
-                            </a>
+
+                        <li>
+                            <a href="#products">Bootcut</a>
                         </li>
-                        <li class="">
-                            <a href="#">
-                                straight
-                            </a>
+
+                        <li>
+                            <a href="#products">Straight</a>
                         </li>
                     </ul>
                 </li>
+
                 <li>
-                    <a href="#">
-                        Jackets
-                    </a>
+                    <a href="#products">Jackets</a>
                 </li>
+
                 <li>
-                    <a href="#">
-                        Gymwear
-                    </a>
+                    <a href="#products">Gymwear</a>
                 </li>
+
                 <li>
-                    <a href="#">
-                        Blazers
-                    </a>
+                    <a href="#products">Blazers</a>
                 </li>
+
                 <li>
-                    <a href="#">
-                        shoes
-                    </a>
+                    <a href="#products">Shoes</a>
                 </li>
             </ul>
 
             <ul class="secondary-navigation">
                 <li>
-                    <a href="#">
-                        Contact
-                    </a>
+                    <a href="#contact">Contact</a>
                 </li>
+
                 <li>
-                    <a href="#">
-                        Newsletter
-                    </a>
+                    <a href="#newsletter">Newsletter</a>
                 </li>
+
                 <li>
-                    <a href="#">
-                        subscribe
-                    </a>
+                    <a href="#newsletter">Subscribe</a>
                 </li>
             </ul>
+
         </nav>
     </aside>
 
-    <main class="main-content">
+    <!-- Main Content -->
+    <main class="main-content" id="home">
+
+        <!-- Top Header -->
         <header class="page-header">
-            <h1>
-                Jeans
-            </h1>
+
+            <h1>Jeans Collection</h1>
 
             <div class="header-action">
-                <button>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </button>
-                <button>
+                <a href="#products" aria-label="Browse products">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-            </div>
-        </header>
-        <!-- hero section -->
-        <section class="hero-section">
-            <img src="images/jeans.jpg" alt="hero image" class="hero-image">
-            <div class="hero-content">
-                <h2>
-                    New arrivals
-                </h2>
-                <p>
-                    COLLECTION 2016
-                </p>
-                <a href="#" class="btn">
-                    SHOP NOW
+                </a>
+
+                <a href="#products" aria-label="Shopping cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
                 </a>
             </div>
+
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero-section" aria-label="New arrivals">
+
+            <img
+                src="images/jeans.jpg"
+                alt="Featured denim collection"
+                class="hero-image"
+            >
+
+            <div class="hero-content">
+                <p class="hero-eyebrow">Discover your style</p>
+
+                <h2>New Arrivals</h2>
+
+                <p class="hero-description">
+                    COLLECTION 2026
+                </p>
+
+                <a href="#products" class="btn">
+                    SHOP NOW
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
         </section>
 
-        <!-- Products section  -->
-         <section class="product-section">
-            <header class="section-header" id="product">
-                <p>
-                    8 items
-                </p>
+        <!-- Products Section -->
+        <section class="product-section" id="products">
+
+            <header class="section-header">
+                <div>
+                    <h2>Our Denim Collection</h2>
+                    <p>Find your perfect fit and everyday style.</p>
+                </div>
+
+                <p class="item-count">8 items</p>
             </header>
 
             <div class="product-grid">
-            <!-- 1 -->
-             <article class="product-card">
-                <figure>
-                    <img src="images/jeans1.jpg" alt="product image" class="product-image">
-                </figure>
 
-                <div class="product-info">
-                    <h2>
-                    Ripped skinny jeans
-                </h2>
-                <p class="product-price">
-                    $29.99
-                </p>
-                </div>
-                
-             </article>
-             
-             <!-- 2 -->
-              <article class="product-card">
-                <figure>
-                    <img src="images/jeans2.jpg" alt="product image" class="product-image">
-                </figure>
+                <!-- Product 1 -->
+                <article class="product-card">
+                    <figure class="product-figure">
+                        <img
+                            src="images/jeans1.jpg"
+                            alt="Blue ripped skinny jeans"
+                            class="product-image"
+                            loading="lazy"
+                        >
+                    </figure>
 
-                <div class="product-info">
-                    <h2>
-                    Mega Ripped Jeans
-                </h2>
-                <p class="product-price">
-                    $19.99
-                </p>
-                </div>
-                
-             </article>
-             <!-- 3 -->
-              <article class="product-card">
-                <figure>
-                    <img src="images/jeans3.jpg" alt="product image" class="product-image">
-                                   <span class="product-badge">
-                        New
-                    </span>
+                    <div class="product-info">
+                        <h3>Ripped Skinny Jeans</h3>
+                        <p class="product-price">$29.99</p>
+                    </div>
+                </article>
 
-                    <button class="product-card-btn">
-                        Buy Now <i class="fa fa-shopping-cart"></i>
-                    </button>
-                </figure>
+                <!-- Product 2 -->
+                <article class="product-card">
+                    <figure class="product-figure">
+                        <img
+                            src="images/jeans2.jpg"
+                            alt="Modern mega ripped denim jeans"
+                            class="product-image"
+                            loading="lazy"
+                        >
+                    </figure>
 
-                <div class="product-info">
-                    <h2>
-                    Mega Ripped Jeans
-                </h2>
-                <p class="product-price">
-                    $19.99
-                </p>
-                </div>
-                
-             </article>
-             <!-- 4 -->
-              <article class="product-card">
-                <figure>
-                    <img src="images/jeans4.jpg" alt="product image" class="product-image">
-                </figure>
+                    <div class="product-info">
+                        <h3>Mega Ripped Jeans</h3>
+                        <p class="product-price">$19.99</p>
+                    </div>
+                </article>
 
-                <div class="product-info">
-                    <h2>
-                    Ripped skinny jeans
-                </h2>
-                <p class="product-price">
-                    $29.99
-                </p>
-                </div>
-                
-             </article>
-             <!-- 5 -->
-              <article class="product-card">
-                <figure>
-                    <img src="images/jeans5.jpg" alt="product image" class="product-image">
-                </figure>
+                <!-- Product 3 -->
+                <article class="product-card">
+                    <figure class="product-figure">
+                        <img
+                            src="images/jeans3.jpg"
+                            alt="New-season blue ripped jeans"
+                            class="product-image"
+                            loading="lazy"
+                        >
 
-                <div class="product-info">
-                    <h2>
-                    Washed Skinny Jeans
-                </h2>
-                <p class="product-price">
-                    $20.50
-                </p>
-                </div>
-                
-             </article>
-             <!-- 6 -->
-              <article class="product-card">
-                <figure>
-                    <img src="images/jeans6.jpg" alt="product image" class="product-image">
-                    <span class="product-badge">
-                        Sale
-                    </span>
+                        <span class="product-badge">New</span>
 
-                    <button class="product-card-btn">
-                        Buy Now <i class="fa fa-shopping-cart"></i>
-                    </button>
-                </figure>
+                        <a href="#contact" class="product-card-btn">
+                            View Details
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </figure>
 
-                <div class="product-info">
-                    <h2>
-                    Vintage Skinny Jeans
-                </h2>
-                <p class="product-price-raised">
-                    $14.99
-                </p>
-                </div>
-                
-             </article>
-             <!-- 7 -->
-              <article class="product-card">
-                <figure>
-                    <img src="images/jeans7.jpg" alt="product image" class="product-image">
-                </figure>
+                    <div class="product-info">
+                        <h3>Mega Ripped Jeans</h3>
+                        <p class="product-price">$19.99</p>
+                    </div>
+                </article>
 
-                <div class="product-info">
-                    <h2>
-                    Vintage Skinny Jeans
-                </h2>
-                <p class="product-price">
-                    $14.99
-                </p>
-                </div>
-                
-             </article>
+                <!-- Product 4 -->
+                <article class="product-card">
+                    <figure class="product-figure">
+                        <img
+                            src="images/jeans4.jpg"
+                            alt="Classic ripped skinny denim jeans"
+                            class="product-image"
+                            loading="lazy"
+                        >
+                    </figure>
 
-             <!-- 8 -->
+                    <div class="product-info">
+                        <h3>Classic Skinny Jeans</h3>
+                        <p class="product-price">$29.99</p>
+                    </div>
+                </article>
 
-             <article class="product-card">
-                <figure>
-                    <img src="images/jeans8.jpg" alt="product image" class="product-image">
-                </figure>
+                <!-- Product 5 -->
+                <article class="product-card">
+                    <figure class="product-figure">
+                        <img
+                            src="images/jeans5.jpg"
+                            alt="Washed blue skinny jeans"
+                            class="product-image"
+                            loading="lazy"
+                        >
+                    </figure>
 
-                <div class="product-info">
-                    <h2>
-                    Ripped Skinny Jeans
-                </h2>
-                <p class="product-price">
-                    $24.99
-                </p>
-                </div>
-                
-             </article>
-         </div>
-        </section>
-        <section class="subscribe-section">
-             <input type="email" placeholder="Enter e-mail" class="subscribe-input">
-             <button type="button" class="btn-subscribe">Subscribe</button>
-        </section>
-    </main>
-    <footer class="site-footer">
+                    <div class="product-info">
+                        <h3>Washed Skinny Jeans</h3>
+                        <p class="product-price">$20.50</p>
+                    </div>
+                </article>
 
-        <div class="footer-column contact-column">
-            <h2 class="section-title">Contact</h2>
-            <p class="subtitle">Questions? Go ahead.</p>
-      
-            <form class="contact-form">
-                <input type="text" placeholder="Name" required class="form-input">
-                <input type="email" placeholder="Email" required class="form-input">
-                <input type="text" placeholder="Subject" required class="form-input">
-                <input type="text" placeholder="Message" required class="form-input">
-                <button type="submit" class="btn-send">Send</button>
-            </form>
-        </div>
+                <!-- Product 6 -->
+                <article class="product-card">
+                    <figure class="product-figure">
+                        <img
+                            src="images/jeans6.jpg"
+                            alt="Vintage skinny denim jeans on sale"
+                            class="product-image"
+                            loading="lazy"
+                        >
 
-        <div class="footer-column about-column">
-            <h2 class="section-title">About</h2>
-      
-            <ul class="footer-links">
-                <li><a href="#">About us</a></li>
-                <li><a href="#">We're hiring</a></li>
-                 <li><a href="#">Support</a></li>
-                <li><a href="#">Find store</a></li>
-                  <li><a href="#">Shipment</a></li>
-                <li><a href="#">Payment</a></li>
-                <li><a href="#">Gift card</a></li>
-                  <li><a href="#">Return</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
-        </div>
+                        <span class="product-badge sale-badge">Sale</span>
 
-        <div class="footer-column store-column">
-            <h2 class="section-title">Store</h2>
-      
-            <p class="info-item"><i class="fa-solid fa-location-dot"></i> Company Name</p>
-            <p class="info-item"><i class="fa-solid fa-phone"></i> 0044123123</p>
-             <p class="info-item"><i class="fa-solid fa-envelope"></i> ex@mail.com</p>
+                        <a href="#contact" class="product-card-btn">
+                            View Details
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </figure>
 
-            <h2 class="section-title margin-top">We accept</h2>
-      
-            <p class="info-item"><i class="fa-solid fa-credit-card"></i> Amex</p>
-            <p class="info-item"><i class="fa-solid fa-credit-card"></i> Credit Card</p>
+                    <div class="product-info">
+                        <h3>Vintage Skinny Jeans</h3>
+                        <p class="product-price">
+                            <span class="old-price">$24.99</span>
+                            <span class="product-price-raised">$14.99</span>
+                        </p>
+                    </div>
+                </article>
 
-            <div class="social-icons">
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="#"><i class="fa-brands fa-snapchat"></i></a>
-                  <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <!-- Product 7 -->
+                <article class="product-card">
+                    <figure class="product-figure">
+                        <img
+                            src="images/jeans7.jpg"
+                            alt="Vintage everyday skinny jeans"
+                            class="product-image"
+                            loading="lazy"
+                        >
+                    </figure>
+
+                    <div class="product-info">
+                        <h3>Vintage Skinny Jeans</h3>
+                        <p class="product-price">$14.99</p>
+                    </div>
+                </article>
+
+                <!-- Product 8 -->
+                <article class="product-card">
+                    <figure class="product-figure">
+                        <img
+                            src="images/jeans8.jpg"
+                            alt="Blue ripped skinny denim jeans"
+                            class="product-image"
+                            loading="lazy"
+                        >
+                    </figure>
+
+                    <div class="product-info">
+                        <h3>Ripped Skinny Jeans</h3>
+                        <p class="product-price">$24.99</p>
+                    </div>
+                </article>
+
             </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="subscribe-section" id="newsletter">
+
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+
+                <p>
+                    Get updates about new arrivals, special offers,
+                    and the latest fashion collections.
+                </p>
+            </div>
+
+            <form class="subscribe-form" action="#newsletter" method="get">
+                <label for="subscribe-email">Email address</label>
+
+                <input
+                    type="email"
+                    id="subscribe-email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    class="subscribe-input"
+                    required
+                >
+
+                <button type="submit" class="btn-subscribe">
+                    Subscribe
+                </button>
+            </form>
+
+        </section>
+
+        <!-- Footer -->
+        <footer class="site-footer" id="contact">
+
+            <!-- Contact Column -->
+            <section class="footer-column contact-column">
+
+                <h2 class="section-title">Contact Us</h2>
+
+                <p class="subtitle">
+                    Questions? We'd love to hear from you.
+                </p>
+
+                <form class="contact-form" action="#contact" method="get">
+
+                    <label for="contact-name">Name</label>
+                    <input
+                        type="text"
+                        id="contact-name"
+                        name="name"
+                        placeholder="Your name"
+                        required
+                        class="form-input"
+                    >
+
+                    <label for="contact-email">Email</label>
+                    <input
+                        type="email"
+                        id="contact-email"
+                        name="email"
+                        placeholder="Your email"
+                        required
+                        class="form-input"
+                    >
+
+                    <label for="contact-subject">Subject</label>
+                    <input
+                        type="text"
+                        id="contact-subject"
+                        name="subject"
+                        placeholder="Message subject"
+                        required
+                        class="form-input"
+                    >
+
+                    <label for="contact-message">Message</label>
+                    <textarea
+                        id="contact-message"
+                        name="message"
+                        placeholder="Write your message"
+                        rows="4"
+                        required
+                        class="form-input"
+                    ></textarea>
+
+                    <button type="submit" class="btn-send">
+                        Send Message
+                    </button>
+
+                </form>
+            </section>
+
+            <!-- About Column -->
+            <section class="footer-column about-column">
+
+                <h2 class="section-title">About</h2>
+
+                <ul class="footer-links">
+                    <li><a href="#home">About Us</a></li>
+                    <li><a href="#contact">Careers</a></li>
+                    <li><a href="#contact">Customer Support</a></li>
+                    <li><a href="#home">Find a Store</a></li>
+                    <li><a href="#contact">Shipping Information</a></li>
+                    <li><a href="#contact">Payment Methods</a></li>
+                    <li><a href="#contact">Gift Cards</a></li>
+                    <li><a href="#contact">Returns</a></li>
+                    <li><a href="#contact">Help Center</a></li>
+                </ul>
+
+            </section>
+
+            <!-- Store Column -->
+            <section class="footer-column store-column">
+
+                <h2 class="section-title">Store Information</h2>
+
+                <address class="store-address">
+
+                    <p class="info-item">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                        <span>Clothing Store</span>
+                    </p>
+
+                    <p class="info-item">
+                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                        <span>Contact information coming soon</span>
+                    </p>
+
+                    <p class="info-item">
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        <span>Email information coming soon</span>
+                    </p>
+
+                </address>
+
+                <h3 class="section-title margin-top">We Accept</h3>
+
+                <p class="info-item">
+                    <i class="fa-regular fa-credit-card" aria-hidden="true"></i>
+                    American Express
+                </p>
+
+                <p class="info-item">
+                    <i class="fa-regular fa-credit-card" aria-hidden="true"></i>
+                    Credit Cards
+                </p>
+
+                <h3 class="section-title margin-top">Follow Us</h3>
+
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"
+                       aria-label="Facebook"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/"
+                       aria-label="Instagram"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.snapchat.com/"
+                       aria-label="Snapchat"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="fa-brands fa-snapchat"></i>
+                    </a>
+
+                    <a href="https://www.pinterest.com/"
+                       aria-label="Pinterest"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+
+                    <a href="https://www.x.com/"
+                       aria-label="X"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/"
+                       aria-label="LinkedIn"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+
+            </section>
+
+        </footer>
+
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>
+                &copy; 2026 Clothing Store. All rights reserved.
+            </p>
         </div>
 
-    </footer>
-         
-
     </main>
-</body>
 
+</body>
 </html>
